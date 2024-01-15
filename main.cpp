@@ -6,9 +6,11 @@ void respondToUserInput(int userInput);
 
 int main(void)
 {
-    int userInput = getUserInput();
-
-    respondToUserInput(userInput);
+    while(true)
+    {
+        int userInput = getUserInput();
+        respondToUserInput(userInput);
+    }
 }
 
 void printOptions(void)
