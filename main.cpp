@@ -67,6 +67,12 @@ void printWallet(void)
     std::cout << "and follow the on screen instructions." << std::endl;
 }
 
+void gotoNextTimeframe(void)
+{
+    std::cout << "Continue - choose options from the menu" << std::endl;
+    std::cout << "and follow the on screen instructions." << std::endl;
+}
+
 void processUserInput(int userInput)
 {
     switch(userInput)
@@ -87,8 +93,7 @@ void processUserInput(int userInput)
             printWallet();
             break;
         case 6:
-            std::cout << "Continue - choose options from the menu" << std::endl;
-            std::cout << "and follow the on screen instructions." << std::endl;
+            gotoNextTimeframe();
             break;
     }
 }
