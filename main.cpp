@@ -59,6 +59,12 @@ void enterAsk(void)
     std::cout << "and follow the on screen instructions." << std::endl;
 }
 
+void enterBid(void)
+{
+    std::cout << "Bid - choose options from the menu" << std::endl;
+    std::cout << "and follow the on screen instructions." << std::endl;
+}
+
 void processUserInput(int userInput)
 {
     switch(userInput)
@@ -73,8 +79,7 @@ void processUserInput(int userInput)
             enterAsk();
             break;
         case 4:
-            std::cout << "Bid - choose options from the menu" << std::endl;
-            std::cout << "and follow the on screen instructions." << std::endl;
+            
             break;
         case 5:
             std::cout << "Wallet - choose options from the menu" << std::endl;
