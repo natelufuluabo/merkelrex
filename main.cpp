@@ -1,11 +1,7 @@
 #include <iostream>
 
-void printMenu(void);
 int getUserInput(void);
 void processUserInput(int userInput);
-void printHelp(void);
-void printMarketStats(void);
-void enterAsk(void);
 
 int main(void)
 {
@@ -65,6 +61,12 @@ void enterBid(void)
     std::cout << "and follow the on screen instructions." << std::endl;
 }
 
+void printWallet(void)
+{
+    std::cout << "Wallet - choose options from the menu" << std::endl;
+    std::cout << "and follow the on screen instructions." << std::endl;
+}
+
 void processUserInput(int userInput)
 {
     switch(userInput)
@@ -79,11 +81,10 @@ void processUserInput(int userInput)
             enterAsk();
             break;
         case 4:
-            
+            enterBid();
             break;
         case 5:
-            std::cout << "Wallet - choose options from the menu" << std::endl;
-            std::cout << "and follow the on screen instructions." << std::endl;
+            printWallet();
             break;
         case 6:
             std::cout << "Continue - choose options from the menu" << std::endl;
