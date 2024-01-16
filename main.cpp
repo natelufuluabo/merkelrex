@@ -5,6 +5,7 @@ int getUserInput(void);
 void processUserInput(int userInput);
 void printHelp(void);
 void printMarketStats(void);
+void enterAsk(void);
 
 int main(void)
 {
@@ -52,6 +53,12 @@ void printMarketStats(void)
     std::cout << "and follow the on screen instructions." << std::endl;
 }
 
+void enterAsk(void)
+{
+    std::cout << "Ask - choose options from the menu" << std::endl;
+    std::cout << "and follow the on screen instructions." << std::endl;
+}
+
 void processUserInput(int userInput)
 {
     switch(userInput)
@@ -63,8 +70,7 @@ void processUserInput(int userInput)
             printMarketStats();
             break;
         case 3:
-            std::cout << "Ask - choose options from the menu" << std::endl;
-            std::cout << "and follow the on screen instructions." << std::endl;
+            enterAsk();
             break;
         case 4:
             std::cout << "Bid - choose options from the menu" << std::endl;
