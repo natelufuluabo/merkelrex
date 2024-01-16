@@ -1,19 +1,19 @@
 #include <iostream>
 
-void printOptions(void);
+void printMenu(void);
 int getUserInput(void);
-void respondToUserInput(int userInput);
+void processUserInput(int userInput);
 
 int main(void)
 {
     while(true)
     {
         int userInput = getUserInput();
-        respondToUserInput(userInput);
+        processUserInput(userInput);
     }
 }
 
-void printOptions(void)
+void printMenu(void)
 {
     std::cout << "1: Print help" << std::endl;
     std::cout << "2: Print exchange stats" << std::endl;
@@ -31,14 +31,14 @@ int getUserInput(void)
     int userOption;
     do
     {
-        printOptions();
+        printMenu();
         std::cin >> userOption;
     } while (userOption < 1 || userOption > 6);
 
     return userOption;
 }
 
-void respondToUserInput(int userInput)
+void processUserInput(int userInput)
 {
     switch(userInput)
     {
